@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>GlampBooking — Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-top">
+      <div class="logo">GlampBooking</div>
+      <div class="top-actions">
+        <span>USD</span>
+        <span>RU</span>
+        <a href="#" class="host-link">Сдать жилье</a>
+        <button class="btn btn-outline">Регистрация</button>
+        <a href="profile.html" class="btn btn-light">Войти</a>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html" class="active">Жилье</a>
+      <a href="search.html">Глэминг</a>
+      <a href="search.html">Домики</a>
+      <a href="search.html">Апартаменты</a>
+      <a href="search.html">Аттракционы</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Найдите свое идеальное место для отдыха</h1>
+      <p>Поиск купольных домов, уютных домиков на деревьях и дизайнерских коттеджей</p>
+      
+      <form class="search-form" action="search.html" method="GET">
+        <div class="search-input">
+          <label>Направление</label>
+          <input type="text" placeholder="Куда едем?">
+        </div>
+        <div class="search-input">
+          <label>Даты</label>
+          <input type="text" placeholder="Заезд — Выезд">
+        </div>
+        <div class="search-input">
+          <label>Гости</label>
+          <input type="text" placeholder="2 взрослых">
+        </div>
+        <button type="submit" class="btn-search">Найти</button>
+      </form>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature-item">
+      <h4>Гарантия лучшей цены</h4>
+      <p>Нашли дешевле? Мы вернем разницу</p>
+    </div>
+    <div class="feature-item">
+      <h4>Проверенная чистота</h4>
+      <p>Высокие стандарты уборки в каждом объекте</p>
+    </div>
+    <div class="feature-item">
+      <h4>Бронирование без риска</h4>
+      <p>Гибкие условия отмены для большинства мест</p>
+    </div>
+  </section>
+
+  <main class="main-content">
+    
+    <section class="section-block">
+      <h2>Популярные направления</h2>
+      <p class="subtitle">Популярные места с высоким рейтингом</p>
+      <div class="destinations-grid">
+        <a href="search.html" class="card-link">
+          <div class="destination-card">
+            <div class="card-image-placeholder">Фото</div>
+            <div class="destination-info">
+              <h3>Зайон</h3>
+              <p>142 объекта</p>
+            </div>
+          </div>
+        </a>
+        <a href="search.html" class="card-link">
+          <div class="destination-card">
+            <div class="card-image-placeholder">Фото</div>
+            <div class="destination-info">
+              <h3>Блу-Ридж</h3>
+              <p>98 объектов</p>
+            </div>
+          </div>
+        </a>
+        <a href="search.html" class="card-link">
+          <div class="destination-card">
+            <div class="card-image-placeholder">Фото</div>
+            <div class="destination-info">
+              <h3>Тихоокеанское побережье</h3>
+              <p>115 объектов</p>
+            </div>
+          </div>
+        </a>
+        <a href="search.html" class="card-link">
+          <div class="destination-card">
+            <div class="card-image-placeholder">Фото</div>
+            <div class="destination-info">
+              <h3>Аспен</h3>
+              <p>64 объекта</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <h2>Популярные летние предложения</h2>
+      <p class="subtitle">Эксклюзивные скидки на предстоящий сезон отпусков</p>
+
+      <div class="cards-container">
+        
+        <a href="search.html" class="card-link">
+          <div class="card">
+            <div class="card-image-placeholder">Фото отеля</div>
+            <div class="card-body">
+              <h3>Под звездами — Сафари купол</h3>
+              <p class="location">Джошуа-Три, Калифорния</p>
+              <div class="card-footer">
+                <span class="rating">9.8</span>
+                <span class="price">$189/ночь</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="search.html" class="card-link">
+          <div class="card">
+            <div class="card-image-placeholder">Фото отеля</div>
+            <div class="card-body">
+              <h3>Лесной дом у реки Редвуд</h3>
+              <p class="location">Гернвилл, Калифорния</p>
+              <div class="card-footer">
+                <span class="rating">9.3</span>
+                <span class="price">$210/ночь</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="search.html" class="card-link">
+          <div class="card">
+            <div class="card-image-placeholder">Фото отеля</div>
+            <div class="card-body">
+              <h3>Юрта в парке Олимпик</h3>
+              <p class="location">Олимпик-Вэлли, Вашингтон</p>
+              <div class="card-footer">
+                <span class="rating">9.1</span>
+                <span class="price">$155/ночь</span>
+              </div>
+            </div>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">GlampBooking</div>
+        <p>Комфортный отдых на природе по всему миру</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h5>Исследовать</h5>
+          <a href="search.html">Глэминг</a>
+          <a href="search.html">Домики</a>
+          <a href="search.html">Апартаменты</a>
+        </div>
+        <div>
+          <h5>Поддержка</h5>
+          <a href="#">Служба поддержки</a>
+          <a href="#">Условия использования</a>
+        </div>
+        <div>
+          <h5>Партнерам</h5>
+          <a href="#">Сдать жилье</a>
+          <a href="#">Сообщество</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

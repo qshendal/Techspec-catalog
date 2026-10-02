@@ -1,0 +1,384 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 1. Шапка */
+.header {
+  background-color: #003580;
+  color: #fff;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.logo a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.top-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.host-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.btn-light {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #003580;
+  font-weight: bold;
+}
+
+.nav {
+  display: flex;
+  overflow-x: auto;
+  gap: 10px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.nav a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+}
+
+/* Хлебные крошки */
+.breadcrumb {
+  max-width: 1100px;
+  width: 100%;
+  margin: 15px auto 0;
+  padding: 0 20px;
+  font-size: 12px;
+  color: #666;
+}
+
+.breadcrumb a {
+  color: #0071c2;
+  text-decoration: none;
+}
+
+/* 2. Контент страницы отеля */
+.hotel-page-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 15px auto;
+  padding: 0 20px;
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Галерея */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.gallery-main, .gallery-sub {
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555;
+  font-size: 13px;
+  min-height: 120px;
+}
+
+.gallery-main {
+  grid-column: span 2;
+  min-height: 220px;
+  background: #bbb;
+}
+
+/* Описание + Форма брони */
+.hotel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hotel-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hotel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.hotel-header h1 {
+  margin: 0 0 5px;
+  font-size: 22px;
+}
+
+.address {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.address a {
+  color: #0071c2;
+}
+
+.rating-badge-lg {
+  background: #003580;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.rating-badge-lg span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.rating-badge-lg small {
+  font-size: 10px;
+  opacity: 0.8;
+}
+
+.details-section {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.details-section h2, .details-section h3 {
+  margin-top: 0;
+  font-size: 16px;
+}
+
+.details-section p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #444;
+}
+
+.amenities-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  font-size: 13px;
+}
+
+.rules-list p {
+  margin: 5px 0;
+  font-size: 13px;
+}
+
+/* Карточка бронирования справа */
+.booking-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  height: fit-content;
+}
+
+.booking-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.reservation-info {
+  background: #f0f4fa;
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.reservation-info p {
+  margin: 4px 0;
+}
+
+.price-breakdown {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-row.total {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 5px 0;
+}
+
+.btn-search {
+  background: #0071c2;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+/* 3. Подвал */
+.footer {
+  background: #00224f;
+  color: #fff;
+  padding: 30px 20px;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-brand p {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.footer-links h5 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.footer-links a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+/* 4. Адаптив под ПК */
+@media (min-width: 768px) {
+  .header {
+    padding: 15px 40px;
+  }
+
+  .header-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: 150px 150px;
+  }
+
+  .gallery-main {
+    grid-column: span 1;
+    grid-row: span 2;
+    min-height: 100%;
+  }
+
+  .hotel-content {
+    flex-direction: row;
+  }
+
+  .booking-card {
+    width: 320px;
+    flex-shrink: 0;
+  }
+
+  .amenities-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 40px;
+  }
+}

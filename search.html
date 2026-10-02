@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>GlampBooking — Результаты поиска</title>
+  <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="header-top">
+      <div class="logo"><a href="index.html" style="color: #fff; text-decoration: none;">GlampBooking</a></div>
+      <div class="top-actions">
+        <span>USD</span>
+        <span>RU</span>
+        <a href="#" class="host-link">Сдать жилье</a>
+        <button class="btn btn-outline">Регистрация</button>
+        <button class="btn btn-light">Войти</button>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="index.html">Жилье</a>
+      <a href="search.html" class="active">Глэминг</a>
+      <a href="search.html">Домики</a>
+      <a href="search.html">Апартаменты</a>
+      <a href="search.html">Аттракционы</a>
+    </nav>
+
+    <div class="search-bar-compact">
+      <input type="text" value="Йосемити, Калифорния">
+      <input type="text" value="14 июня — 21 июня">
+      <input type="text" value="3 гостя">
+      <button class="btn-search">Обновить</button>
+    </div>
+  </header>
+
+  <div class="search-page-container">
+    
+    <aside class="sidebar">
+      <div class="map-box">
+        <span>Показать на карте</span>
+      </div>
+
+      <div class="filter-group">
+        <h4>Фильтровать по:</h4>
+        
+        <div class="filter-section">
+          <h5>Бюджет (за ночь)</h5>
+          <input type="range" min="50" max="450">
+        </div>
+
+        <div class="filter-section">
+          <h5>Удобства</h5>
+          <label><input type="checkbox"> Джакузи</label>
+          <label><input type="checkbox"> Вид на горы</label>
+          <label><input type="checkbox"> Бесплатный Wi-Fi</label>
+          <label><input type="checkbox"> Можно с питомцами</label>
+        </div>
+
+        <div class="filter-section">
+          <h5>Тип жилья</h5>
+          <label><input type="checkbox"> Геокупол</label>
+          <label><input type="checkbox"> Сафари-тент</label>
+          <label><input type="checkbox"> Шале / A-Frame</label>
+          <label><input type="checkbox"> Юрта</label>
+        </div>
+      </div>
+    </aside>
+
+    <main class="results-content">
+      <div class="results-header">
+        <h2>Регион Йосемити: найдено 64 объекта</h2>
+      </div>
+
+      <!-- Клик по любой карточке переводит на hotel.html -->
+      <a href="hotel.html" class="card-link">
+        <div class="horizontal-card">
+          <div class="card-image-placeholder">Фото отеля</div>
+          <div class="card-info">
+            <h3>Wildflower Ridge Star Dome</h3>
+            <p class="location">Вход в Йосемити • 5.6 км до центра</p>
+            <p class="desc">Уютный отапливаемый геокупол с панорамным видом на звезды и джакузи.</p>
+            <span class="badge">Завтрак включен</span>
+          </div>
+          <div class="card-price-block">
+            <div class="rating-badge">9.4</div>
+            <div class="price-val">$245</div>
+            <p class="price-sub">за 7 ночей</p>
+            <button class="btn-search">Проверить места</button>
+          </div>
+        </div>
+      </a>
+
+      <a href="hotel.html" class="card-link">
+        <div class="horizontal-card">
+          <div class="card-image-placeholder">Фото отеля</div>
+          <div class="card-info">
+            <h3>Summit Ridge A-Frame Sanctuary</h3>
+            <p class="location">Западный Йосемити • 5.6 км до центра</p>
+            <p class="desc">Классический деревянный A-Frame дом в глубоком лесу с камином.</p>
+            <span class="badge">Бесплатная отмена</span>
+          </div>
+          <div class="card-price-block">
+            <div class="rating-badge">8.9</div>
+            <div class="price-val">$310</div>
+            <p class="price-sub">за 7 ночей</p>
+            <button class="btn-search">Проверить места</button>
+          </div>
+        </div>
+      </a>
+
+      <a href="hotel.html" class="card-link">
+        <div class="horizontal-card">
+          <div class="card-image-placeholder">Фото отеля</div>
+          <div class="card-info">
+            <h3>Eco-Luxe Meadows Bell Tent</h3>
+            <p class="location">Оукхёрст • 5.6 км до центра</p>
+            <p class="desc">Просторный шатер на деревянном помосте с дровяной печью.</p>
+            <span class="badge">Без предоплаты</span>
+          </div>
+          <div class="card-price-block">
+            <div class="rating-badge">9.1</div>
+            <div class="price-val">$135</div>
+            <p class="price-sub">за 7 ночей</p>
+            <button class="btn-search">Проверить места</button>
+          </div>
+        </div>
+      </a>
+    </main>
+
+  </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <div class="logo">GlampBooking</div>
+        <p>Комфортный отдых на природе по всему миру</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h5>Исследовать</h5>
+          <a href="search.html">Глэминг</a>
+          <a href="search.html">Домики</a>
+        </div>
+        <div>
+          <h5>Поддержка</h5>
+          <a href="#">Служба поддержки</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
